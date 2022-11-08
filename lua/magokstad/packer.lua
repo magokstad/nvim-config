@@ -21,11 +21,19 @@ return require('packer').startup(function(use)
     -- Cosmetics
     use 'folke/tokyonight.nvim'
     use {
+      'akinsho/bufferline.nvim',
+      tag = "v3.*",
+      requires = 'nvim-tree/nvim-web-devicons',
+      config = function()
+        require("bufferline").setup{}
+      end
+    }
+    use {
       'goolord/alpha-nvim',
       config = function ()
         require'alpha'.setup(require'alpha.themes.dashboard'.config)
       end
-    } 
+    }
     use({
       "folke/noice.nvim",
       config = function()
