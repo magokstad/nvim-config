@@ -30,22 +30,17 @@ require("mason-lspconfig").setup({
   ensure_installed = {
     -- spleling mistkae
     -- lua
-    "lua-language-server",
-    "stylua",
-    "sumneko-lua",
+    "sumneko_lua",
 
     -- web dev stuff
-    "css-lsp",
-    "html-lsp",
-    "typescript-language-server",
-    "vetur-vls",
-    "tailwindcss-language-server",
-
-    -- Python
-    "jdtls",
+    "cssls",
+    "html",
+    "tsserver",
+    "vuels",
+    "tailwindcss",
 
     -- rust
-    "rust-analyzer",
+    "rust_analyzer",
 
     -- latex
     "texlab",
@@ -54,10 +49,18 @@ require("mason-lspconfig").setup({
     "jedi_language_server",
 
     -- clojure
-    "clojure-lsp",
+    "clojure_lsp",
 
     -- "crystal"
-    "crystalline"
+    "crystalline",
+
+    -- eslint???
+    "eslint",
+
+    -- C (++)
+    "clangd",
+    "cmake",
+    "nimls",
   },
 })
 
@@ -76,7 +79,12 @@ local servers = {
   "vls",
   "kotlin_language_server",
   "crystalline",
-  "sumneko_lua"
+  "sumneko_lua",
+  "eslint",
+  "eslint_d",
+  "eslint_lsp",
+  "cmake",
+  "nimls"
 }
 
 
