@@ -8,7 +8,7 @@ and will replace my nvchad config.
 To try it: 
 ```
 git clone https://github.com/magokstad/nvim-config ~/.config
-mv -r ~/.config/nvim ~/.config/nvimbak_b4_mago
-mv -r ~/.config/nvim-config ~/.config/nvim
+mv ~/.config/nvim ~/.config/nvimbak_b4_mago
+mv ~/.config/nvim-config ~/.config/nvim
 ```
 
