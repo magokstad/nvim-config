@@ -1,3 +1,3 @@
 require("magokstad/set")
 require("magokstad/remap")
-require("magokstad/ensure")
+require("magokstad/lsp")
