@@ -71,6 +71,7 @@ return require('packer').startup(function(use)
         }
       end
     }
+    use "jose-elias-alvarez/null-ls.nvim"
 
     -- Comments
     use {

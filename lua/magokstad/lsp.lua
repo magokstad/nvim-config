@@ -28,6 +28,7 @@ require'nvim-treesitter.configs'.setup {
 require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = {
+    -- spleling mistkae
     -- lua
     "lua-language-server",
     "stylua",
