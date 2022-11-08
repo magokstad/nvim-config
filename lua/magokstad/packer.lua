@@ -12,7 +12,7 @@ local ensure_packer = function()
 end
 
 
-return require('packer').startup(function()
+return require('packer').startup(function(use)
 
     -- Requirements++
     use 'wbthomason/packer.nvim'
@@ -72,6 +72,12 @@ return require('packer').startup(function()
           require('Comment').setup()
       end
     }
+
+
+    -- Terminal
+    use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+      require("toggleterm").setup()
+    end}
 
     -- Wakatime
     use "wakatime/vim-wakatime"

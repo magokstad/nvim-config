@@ -7,4 +7,4 @@ nnoremap("<leader>fg", "<cmd>Telescope live_grep<CR>")
 nnoremap("<leader>fb", "<cmd>Telescope buffers<CR>")
 nnoremap("<leader>fh", "<cmd>Telescope help_tags<CR>")
 
-
+nnoremap("<leader>tt", "<cmd>ToggleTerm<CR>")
