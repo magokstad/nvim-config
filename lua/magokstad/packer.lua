@@ -11,7 +11,6 @@ local ensure_packer = function()
   return false
 end
 
-
 return require('packer').startup(function(use)
 
     -- Requirements++
@@ -81,6 +80,23 @@ return require('packer').startup(function(use)
       end
     }
 
+    -- Completion (oh boy, this is a big one)
+    use({"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"})
+    use {
+      "hrsh7th/nvim-cmp",
+      requires = {
+          "hrsh7th/cmp-buffer",
+          "hrsh7th/cmp-nvim-lsp",
+          -- 'hrsh7th/cmp-nvim-lua',
+          -- 'octaltree/cmp-look',
+          'hrsh7th/cmp-path',
+          -- 'hrsh7th/cmp-calc',
+          -- 'f3fora/cmp-spell', 
+          -- 'hrsh7th/cmp-emoji', 
+          'saadparwaiz1/cmp_luasnip',
+          'rafamadriz/friendly-snippets'
+      }
+    }
 
     -- Terminal
     use {"akinsho/toggleterm.nvim", tag = '*', config = function()
