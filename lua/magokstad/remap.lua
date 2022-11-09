@@ -32,6 +32,9 @@ nnoremap("<leader>dbrl", "<cmd>lua require'dap'.run_last()<CR>")
 nnoremap("<leader>dbd", "<cmd>lua require'dap'.disconnect()<CR>")
 
 -- SnipRun (manual comp needed for now)
-vnoremap("<leader>r", "<cmd>SnipRun<CR>")
-vnoremap("<leader>c", "<cmd>SnipClose<CR>")
+vnoremap("<leader>sr", "<cmd>SnipRun<CR>")
+vnoremap("<leader>sc", "<cmd>SnipClose<CR>")
+vnoremap("<leader>sx", "<cmd>SnipReset<CR>")
+vnoremap("<leader>sm", "<cmd>SnipReplMemoryClean<CR>")
+vnoremap("<leader>si", "<cmd>SnipInfo<CR>")
 
