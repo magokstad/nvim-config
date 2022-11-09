@@ -28,6 +28,10 @@ return require('packer').startup(function(use)
       end
     }
     use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
+    use {
       'goolord/alpha-nvim',
       config = function ()
         require'alpha'.setup(require'alpha.themes.dashboard'.config)
@@ -48,11 +52,44 @@ return require('packer').startup(function(use)
         }
     })
 
+    -- Zen
+    use {
+      "folke/twilight.nvim",
+      config = function()
+        require("twilight").setup {
+          -- your configuration comes here
+        }
+      end
+    }
+    use {
+      "folke/zen-mode.nvim",
+      config = function()
+        require("zen-mode").setup {
+          -- your configuration comes here
+        }
+      end
+    }
+
     -- Fuzzy find etc
     use 'nvim-telescope/telescope.nvim'
     use "folke/which-key.nvim"
 
+
+    -- Git
+    use {
+      'lewis6991/gitsigns.nvim',
+      config = function()
+        require('gitsigns').setup()
+      end
+    }
+
     -- Language stuff
+    use {
+      "folke/neodev.nvim",
+      config = function ()
+        require("neodev").setup()
+      end
+    }
     use {
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
@@ -66,8 +103,6 @@ return require('packer').startup(function(use)
       config = function()
         require("trouble").setup {
           -- your configuration comes here
-          -- or leave it empty to use the default settings
-          -- refer to the configuration section below
         }
       end
     }
@@ -77,7 +112,14 @@ return require('packer').startup(function(use)
     use {
       'numToStr/Comment.nvim',
       config = function()
-          require('Comment').setup()
+        require('Comment').setup()
+      end
+    }
+    use {
+      "folke/todo-comments.nvim",
+      requires = "nvim-lua/plenary.nvim",
+      config = function()
+        require('todo-comments').setup()
       end
     }
 
