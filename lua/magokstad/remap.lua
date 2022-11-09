@@ -8,6 +8,7 @@ nnoremap("<leader>fb", "<cmd>Telescope buffers<CR>")
 nnoremap("<leader>fh", "<cmd>Telescope help_tags<CR>")
 
 nnoremap("<leader>tt", "<cmd>ToggleTerm<CR>")
+nnoremap("<leader>zm", "<cmd>ZenMode<CR>")
 
 nnoremap("<TAB>", "<cmd>BufferLineCycleNext<CR>")
 nnoremap("<S-Tab>", "<cmd>BufferLineCycleNext<CR>")
