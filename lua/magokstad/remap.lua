@@ -1,4 +1,4 @@
-local nnoremap = require("magokstad.keymap").nnoremap 
+local nnoremap = require("magokstad.keymap").nnoremap
 
 nnoremap("<leader>pv", "<cmd>Ex<CR>")
 
@@ -9,6 +9,7 @@ nnoremap("<leader>fh", "<cmd>Telescope help_tags<CR>")
 
 nnoremap("<leader>tt", "<cmd>ToggleTerm<CR>")
 
-
 nnoremap("<TAB>", "<cmd>BufferLineCycleNext<CR>")
 nnoremap("<S-Tab>", "<cmd>BufferLineCycleNext<CR>")
+
+nnoremap("<leader>ps", "<cmd>so ~/.config/nvim/lua/magokstad/packer.lua<CR><cmd>PackerSync<CR>")

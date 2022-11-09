@@ -18,5 +18,4 @@ vim.opt.wrap = true
 vim.g.mapleader = " "
 
 vim.opt.mouse = "a"
-
 vim.opt.termguicolors = true
