@@ -126,6 +126,10 @@ return require('packer').startup(function(use)
       end
     }
 
+    -- Debugging
+    use 'mfussenegger/nvim-jdtls'
+    use 'mfussenegger/nvim-dap'
+
     -- Completion (oh boy, this is a big one)
     use({"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"})
     use {
@@ -143,6 +147,10 @@ return require('packer').startup(function(use)
           'rafamadriz/friendly-snippets'
       }
     }
+
+    -- Compiling
+    use 'neomake/neomake'
+    use {'michaelb/sniprun', run = 'bash install.sh'}
 
     -- Terminal
     use {"akinsho/toggleterm.nvim", tag = '*', config = function()
