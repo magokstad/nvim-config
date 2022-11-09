@@ -81,8 +81,6 @@ local servers = {
   "crystalline",
   "sumneko_lua",
   "eslint",
-  "eslint_d",
-  "eslint_lsp",
   "cmake",
   "nimls"
 }
