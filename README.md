@@ -10,9 +10,8 @@ but it is fully functional as is
 
 To try it: 
 ```
-git clone https://github.com/magokstad/nvim-config ~/.config
 mv ~/.config/nvim ~/.config/nvimbak_b4_mago
-mv ~/.config/nvim-config ~/.config/nvim
+git clone https://github.com/magokstad/nvim-config ~/.config/nvim
 ```
 
 Make sure to source packer so plugins can load.
