@@ -36,5 +36,9 @@ vnoremap("<leader>sr", "<cmd>SnipRun<CR>")
 vnoremap("<leader>sc", "<cmd>SnipClose<CR>")
 vnoremap("<leader>sx", "<cmd>SnipReset<CR>")
 vnoremap("<leader>sm", "<cmd>SnipReplMemoryClean<CR>")
-vnoremap("<leader>si", "<cmd>SnipInfo<CR>")
+-- normal mode
+nnoremap("<leader>sr", "<cmd>SnipRun<CR>")
+nnoremap("<leader>sc", "<cmd>SnipClose<CR>")
+nnoremap("<leader>sx", "<cmd>SnipReset<CR>")
+nnoremap("<leader>sm", "<cmd>SnipReplMemoryClean<CR>")
 
