@@ -19,6 +19,7 @@ return require('packer').startup(function(use)
 
     -- Cosmetics
     use 'folke/tokyonight.nvim'
+    use { "catppuccin/nvim", as = "catppuccin" }
     use {
       'akinsho/bufferline.nvim',
       tag = "v3.*",
@@ -150,7 +151,7 @@ return require('packer').startup(function(use)
 
     -- Compiling
     use 'neomake/neomake'
-    use {'michaelb/sniprun', run = 'bash install.sh'}
+    use {'michaelb/sniprun', run = 'bash ./install.sh'}
 
     -- Terminal
     use {"akinsho/toggleterm.nvim", tag = '*', config = function()
