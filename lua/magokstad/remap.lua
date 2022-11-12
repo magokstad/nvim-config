@@ -1,5 +1,6 @@
 local nnoremap = require("magokstad.keymap").nnoremap
 local vnoremap = require("magokstad.keymap").vnoremap
+local tnoremap = require("magokstad.keymap").tnomemap
 
 -- Telescope
 nnoremap("<leader>ff", "<cmd>Telescope find_files<CR>")
@@ -9,6 +10,7 @@ nnoremap("<leader>fh", "<cmd>Telescope help_tags<CR>")
 
 -- Term, zen
 nnoremap("<leader>tt", "<cmd>ToggleTerm<CR>")
+tnoremap("<leader>tt", "<cmd>ToggleTerm<CR>")
 nnoremap("<leader>zm", "<cmd>ZenMode<CR>")
 
 -- Buffers
