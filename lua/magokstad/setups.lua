@@ -7,10 +7,11 @@ null_ls.setup({
   },
 })
 
+-- hello
 local wk = require("which-key")
 wk.register(mappings, opts)
 
 
-require'sniprun'.setup({
-    repl_enable = {'Python3_original'}
+require 'sniprun'.setup({
+  repl_enable = { 'Python3_original' }
 })
