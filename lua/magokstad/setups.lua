@@ -15,3 +15,13 @@ wk.register(mappings, opts)
 require 'sniprun'.setup({
   repl_enable = { 'Python3_original' }
 })
+
+require('nvim-autopairs').setup({
+  disable_filetype = {
+    "TelescopePrompt",
+    "vim",
+    "scheme",
+    "lisp",
+    "fennel"
+  },
+})
