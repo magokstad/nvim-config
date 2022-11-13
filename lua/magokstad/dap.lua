@@ -37,13 +37,13 @@ dap.configurations.rust = dap.configurations.cpp
 
 
 -- NOTE: MIGHT CHECK OUT LATER
- -- env = function()
- --    local variables = {}
- --    for k, v in pairs(vim.fn.environ()) do
- --      table.insert(variables, string.format("%s=%s", k, v))
- --    end
- --    return variables
- --  end,
+-- env = function()
+--    local variables = {}
+--    for k, v in pairs(vim.fn.environ()) do
+--      table.insert(variables, string.format("%s=%s", k, v))
+--    end
+--    return variables
+--  end,
 
 
 -- TODO: Java SoonTM

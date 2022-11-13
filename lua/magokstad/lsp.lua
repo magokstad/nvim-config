@@ -46,6 +46,7 @@ local servers = {
   "eslint",
   "cmake",
   "nimls",
+  "crystalline"
 }
 
 -- null-ls (format/lint)
@@ -63,7 +64,8 @@ local sources = {
   b.formatting.shfmt,
   b.diagnostics.shellcheck.with { diagnostics_format = "#{m} [#{c}]" },
 
-  b.diagnostics.clang_check
+  b.diagnostics.clang_check,
+  b.code_actions.cspell
 }
 
 -- Mason setup
@@ -211,8 +213,9 @@ cmp.setup({
 })
 
 -- Provides format on save
-require("lsp-format").setup {}
-local on_attach = require("lsp-format").on_attach
+-- require("lsp-format").setup {}
+-- local on_attach = require("lsp-format").on_attach
+-- was buggy on some filetypes. TODO: add manual additions
 
 -- Sets up format and lint
 null_ls.setup {

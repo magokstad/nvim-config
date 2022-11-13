@@ -114,6 +114,23 @@ return require('packer').startup(function(use)
   }
   use "lukas-reineke/lsp-format.nvim"
 
+  -- Tmp crystal support
+  use "vim-crystal/vim-crystal"
+
+
+  -- Regex
+  use { 'bennypowers/nvim-regexplainer',
+    config = function() require 'regexplainer'.setup() end,
+    requires = {
+      'nvim-treesitter/nvim-treesitter',
+      'MunifTanjim/nui.nvim',
+    }
+  }
+
+  -- Editor-config
+  use "gpanders/editorconfig.nvim"
+
+
   -- Comments
   use {
     'numToStr/Comment.nvim',

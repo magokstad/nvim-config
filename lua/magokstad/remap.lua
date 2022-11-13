@@ -43,4 +43,3 @@ nnoremap("<leader>sr", "<cmd>SnipRun<CR>")
 nnoremap("<leader>sc", "<cmd>SnipClose<CR>")
 nnoremap("<leader>sx", "<cmd>SnipReset<CR>")
 nnoremap("<leader>sm", "<cmd>SnipReplMemoryClean<CR>")
-
