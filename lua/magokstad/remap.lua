@@ -20,6 +20,10 @@ nnoremap("<S-Tab>", "<cmd>BufferLineCycleNext<CR>")
 -- Sync packer
 nnoremap("<leader>ps", "<cmd>so ~/.config/nvim/lua/magokstad/packer.lua<CR><cmd>PackerSync<CR>")
 
+
+-- LSP
+-- TODO: code this
+
 -- Debugging
 nnoremap("<leader>dbb", "<cmd>lua require'dap'.toggle_breakpoint()<CR>")
 nnoremap("<leader>dbrb", "<cmd>lua require'dap'.clear_breakpoints()<CR>")

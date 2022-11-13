@@ -68,6 +68,8 @@ local sources = {
   b.code_actions.cspell
 }
 
+------------------------------------------------------------------------
+
 -- Mason setup
 require("mason").setup()
 require("mason-lspconfig").setup({
