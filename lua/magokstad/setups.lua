@@ -25,13 +25,3 @@ require('nvim-autopairs').setup({
     "fennel"
   },
 })
-
-require('nvim-autopairs').setup({
-  disable_filetype = {
-    "TelescopePrompt",
-    "vim",
-    "scheme",
-    "lisp",
-    "fennel"
-  },
-})
