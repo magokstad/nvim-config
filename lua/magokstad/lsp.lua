@@ -69,7 +69,7 @@ local sources = {
   b.code_actions.cspell,
 
   -- Pyhon
-  b.diagnostics.mypy,
+  b.diagnostics.mypy.with({extra_args = {"--check-untyped-defs"}}) ,
   b.diagnostics.ruff
 
 }
@@ -78,44 +78,9 @@ local sources = {
 
 -- Mason setup
 require("mason").setup()
-require("mason-lspconfig").setup({
-  ensure_installed = servers
-  --{  -- If everything works here, i will remove what is commented out
-  --   -- spleling mistkae
-  --   -- lua
-  --   "sumneko_lua",
-  --
-  --   -- web dev stuff
-  --   "cssls",
-  --   "html",
-  --   "tsserver",
-  --   "vuels",
-  --   "tailwindcss",
-  --
-  --   -- rust
-  --   "rust_analyzer",
-  --
-  --   -- latex
-  --   "texlab",
-  --
-  --   -- python
-  --   "jedi_language_server",
-  --
-  --   -- clojure
-  --   "clojure_lsp",
-  --
-  --   -- "crystal"
-  --   "crystalline",
-  --
-  --   -- eslint???
-  --   "eslint",
-  --
-  --   -- C (++)
-  --   "clangd",
-  --   "cmake",
-  --   "nimls",
-  -- },
-})
+require("mason-lspconfig").setup({ensure_installed = servers})
+-- There used to be a seperate list here, but it was removed since it was
+-- identical to the "servers" list
 
 -- taken from https://vonheikemen.github.io/devlog/tools/setup-nvim-lspconfig-plus-nvim-cmp/
 vim.opt.completeopt = { 'menu', 'menuone', 'noselect' }
