@@ -64,8 +64,14 @@ local sources = {
   b.formatting.shfmt,
   b.diagnostics.shellcheck.with { diagnostics_format = "#{m} [#{c}]" },
 
+  -- C etc
   b.diagnostics.clang_check,
-  b.code_actions.cspell
+  b.code_actions.cspell,
+
+  -- Pyhon
+  b.diagnostics.mypy,
+  b.diagnostics.ruff
+
 }
 
 ------------------------------------------------------------------------
