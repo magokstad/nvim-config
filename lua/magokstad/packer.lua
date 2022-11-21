@@ -168,6 +168,9 @@ return require('packer').startup(function(use)
     }
   }
 
+  -- Nim temp
+  use {'alaviss/nim.nvim', rtp = "syntax"}
+
   -- Compiling
   use 'neomake/neomake'
   use { 'michaelb/sniprun', run = 'bash ./install.sh' }
