@@ -46,7 +46,6 @@ local servers = {
   "eslint",
   "cmake",
   "nimls",
-  "crystalline"
 }
 
 -- null-ls (format/lint)

@@ -21,6 +21,7 @@ require('nvim-autopairs').setup({
     "TelescopePrompt",
     "vim",
     "scheme",
+    "scm",
     "lisp",
     "fennel"
   },
