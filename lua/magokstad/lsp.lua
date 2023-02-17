@@ -28,6 +28,7 @@ require 'nvim-treesitter.configs'.setup {
 
 -- LSP only!
 local servers = {
+  "arduino_language_server",
   "html",
   "cssls",
   "tsserver",
@@ -39,13 +40,13 @@ local servers = {
   "jedi_language_server",
   "texlab",
   "clojure_lsp",
-  "vls",
+  -- "vls",
   "kotlin_language_server",
-  "crystalline",
-  "sumneko_lua",
+  -- "crystalline",
+  "lua_ls",
   "eslint",
   "cmake",
-  "nimls",
+  -- "nimls",
 }
 
 -- null-ls (format/lint)
