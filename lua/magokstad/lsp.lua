@@ -32,7 +32,6 @@ local servers = {
   "html",
   "cssls",
   "tsserver",
-  "vuels",
   "tailwindcss",
   "clangd",
   "rust_analyzer",
