@@ -19,7 +19,8 @@ require 'nvim-treesitter.configs'.setup {
     "python",
     "clojure",
     "kotlin",
-    "v"
+    "v",
+    "haskell"
   },
   highlight = {
     additional_vim_regex_highlighting = true,
@@ -42,6 +43,7 @@ local servers = {
   "clojure_lsp",
   -- "vls",
   "kotlin_language_server",
+  "hls",
   -- "crystalline",
   "lua_ls",
   "eslint",
@@ -203,3 +205,20 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+-- print(lspconfig.clangd.setup)
+
+lspconfig.clangd.setup {
+  on_attach = on_attach,
+        cmd = {
+            "clangd",
+            "--all-scopes-completion",
+            "--clang-tidy",
+            "--background-index",
+            "--header-insertion=iwyu",
+            "--suggest-missing-includes",
+            -- '--query-driver="/usr/local/opt/gcc-arm-none-eabi-8-2019-q3-update/bin/arm-none-eabi-gcc"'
+        },
+        -- filetypes = {"c", "cpp", "objc", "objcpp"},
+
+      }
