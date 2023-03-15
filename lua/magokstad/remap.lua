@@ -10,7 +10,8 @@ nnoremap("<leader>fh", "<cmd>Telescope help_tags<CR>")
 
 -- Term, zen
 nnoremap("<leader>tt", "<cmd>ToggleTerm<CR>")
-tnoremap("<leader>tt", "<cmd>ToggleTerm<CR>")
+-- tnoremap("<leader>tt", "<cmd>ToggleTerm<CR>")
+tnoremap("<Esc>", "<C-\\><C-n>")
 nnoremap("<leader>zm", "<cmd>ZenMode<CR>")
 
 -- Buffers
