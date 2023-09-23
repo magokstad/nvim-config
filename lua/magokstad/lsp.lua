@@ -20,7 +20,8 @@ require 'nvim-treesitter.configs'.setup {
     "clojure",
     "kotlin",
     "v",
-    "haskell"
+    "haskell",
+    "glsl"
   },
   highlight = {
     additional_vim_regex_highlighting = true,

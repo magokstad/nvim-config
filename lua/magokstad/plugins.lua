@@ -61,6 +61,12 @@ local plugins = {
 
   "lukas-reineke/lsp-format.nvim",
 
+  -- glsl
+  -- {
+  --     "timtro/glslView-nvim",
+  --     ft = 'glsl'
+  -- },
+
   -- Parinfer
   'eraserhd/parinfer-rust',
 
@@ -81,7 +87,8 @@ local plugins = {
   -- Completion (oh boy, this is a big one)
   {
     "L3MON4D3/LuaSnip",
-    tag = "v<CurrentMajor>.*"
+    version = "2.*",
+    build = "make install_jsregexp"
   },
   {
     "hrsh7th/nvim-cmp",
