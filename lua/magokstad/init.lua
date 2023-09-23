@@ -1,5 +1,0 @@
-require("magokstad/set")
-require("magokstad/remap")
-require("magokstad/plugins")
-require("magokstad/lsp")
-require("magokstad/setups")
